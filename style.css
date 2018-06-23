@@ -73,3 +73,40 @@ body{
     width: 45%;
     transform: skewX(-20deg);
 }
+
+.content{
+    position: absolute;
+    top: 4em;
+    left: 6em;
+    height: 27em;
+    width: 47em;
+    /* background-color: tomato; */
+    color: white;
+    padding: 5em 1em;
+}
+
+.content h1{
+    line-height:0;
+    font-size: 5vw;
+    margin-top: 10px;
+}
+
+.content p{
+    margin-top: 3em;
+    line-height: 1.5em;
+    font-size: 1.7vw; 
+}
+
+.content button{
+    margin-top: 1em;
+    font-size: 1.4vw;
+    height: 3em;
+    width: 17vw;
+    color: white;
+    background: none;
+    border: 3px solid white;
+    border-radius: 7px;
+}
+.content button:hover{
+    cursor: pointer;
+}
