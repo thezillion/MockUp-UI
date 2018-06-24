@@ -665,7 +665,6 @@ body{
     }
     .midContent{
         margin-top: -3em;
-        /* sbackground-color: teal; */
         padding: 4px 1.5em;
         font-size: 19px;
         display: grid;
@@ -684,6 +683,21 @@ body{
     #midAddresscontent i{
         font-size: 4em;
         margin-bottom: 0.5em;
+    }
+
+
+    /* Details Div */
+    .details{
+        padding: 1em 0 1em 1em;
+    }
+    .details li{
+        font-size: 13px;
+    }
+    .details h1{
+        font-size: 9vw;
+    }
+    .detailImage i{
+        left: -1em;
     }
 
 }
