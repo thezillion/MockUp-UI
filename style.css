@@ -167,6 +167,7 @@ body{
     width: 100%;
     height: auto;
     display: grid;
+    margin-bottom: 7em;
     grid-template-rows: auto auto;
     grid-template-columns: auto auto;
     grid-template-areas: 
@@ -184,14 +185,53 @@ body{
 }
 
 .midImage{
-    background-color: teal;
+    /* background-color: teal; */
     grid-area: box2;
+    display: grid;
+}
+.midImage i{
+    font-size: 7vw;
+    justify-self: center;
+    align-self: center;
+    color: #1b5e20;
+}
+#midImagecontent{
+    justify-self: center;
+    align-self: center;
+    line-height: 1px;
+    margin-top: 2.5em;
+}
+#midImagecontent h1{
+    margin-top: 0.3em;
+    color: #1b5e20;
+}
+.midImage span{
+    font-size: 2em;
 }
 
 .midAddress{
-    background-color: #333;
+    /* background-color: #333; */
     grid-area: box3;
+    display: grid;
 }
+#midAddresscontent{
+    align-self: center;
+    justify-self: center;
+    line-height: 1.5em;
+    font-size: 2vw;
+    display: grid;
+}
+#midAddresscontent i{
+    font-size: 7vw;
+    align-self: center;
+    justify-self: center;
+    margin-bottom: 0.2em;
+    color: #1b5e20;
+}
+#line2{
+    color: #1b5e20;
+}
+
 
 
 
