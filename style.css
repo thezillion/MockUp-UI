@@ -721,6 +721,46 @@ body{
     .bottomContent{
         height: auto;
         padding: 2em 2em;
+        font-size: 22px;
+    }
+
+
+    /* PrizeDiv */
+    .prizeDiv{
+        height: 47vh;
+    }
+    .prizeHead{
+        margin-bottom: 7em;
+    }
+    .prizeHead h1{
+        font-size: 9vw;
+    }
+
+
+    /* Footer */
+    .footerDiv{
+        height: 30vh;
+    }
+    .logo h3{
+        font-size: 5.5vw;
+    }
+    .logo div a{
+        font-size: 10px;
+        padding: 0 4px;
+    }
+    .footerIbeto img{
+        height: 4em;
+        width: 4em;
+    }
+    .footerIbeto div{
+        font-size: 8px;
+    }
+    .footerExcel img{
+        height: 2.3em;
+        width: 4em;
+    }
+    .footerExcel div{
+        font-size: 8px;
     }
 
 }
