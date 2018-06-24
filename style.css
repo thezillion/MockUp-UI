@@ -276,6 +276,7 @@ body{
 }
 .bottomImage div{
     justify-self: center;
+    line-height: 1px;
 }
 
 .bottomContent{
@@ -285,6 +286,9 @@ body{
     font-size: 1.6em;
     line-height: 1.6;
 }
+
+
+
 
 
 
@@ -324,7 +328,7 @@ body{
     /* background-color: teal; */
     display: grid;
 }
-.second div{
+.secondBox{
     background: none;
     border: 5px solid white;
     border-radius: 7px;
@@ -332,14 +336,36 @@ body{
     width: 75%;
     justify-self: center;
     align-self: center;
+    position: relative;
+    display: grid;
 }
+.secondBox i{
+    font-size: 9vw;
+    justify-self: center;
+    position: absolute;
+    top: 0.6em;
+}
+.secondBox div{
+    justify-self: center;
+    align-self: center;
+    font-size: 3vw;
+    line-height: 1.3em;
+    padding: 0;
+    display: grid;
+    margin-top: 5em;
+}
+.secondBox div span{
+    justify-self: center;
+}
+
+
 
 .first{
     grid-area: first;
     /* background-color: yellow; */
     display: grid;
 }
-.first div{
+.firstBox{
     background: none;
     border: 5px solid white;
     border-radius: 7px;
@@ -347,14 +373,36 @@ body{
     width: 85%;
     justify-self: center;
     align-self: center;
+    display: grid;
+    position: relative;
 }
+.firstBox i{
+    font-size: 13vw;
+    justify-self: center;
+    position: absolute;
+    top: 0.5em;
+}
+.firstBox div{
+    justify-self: center;
+    align-self: center;
+    font-size: 4vw;
+    line-height: 1.3em;
+    padding: 0;
+    display: grid;
+    margin-top: 5em;
+}
+.firstBox div span{
+    justify-self: center;
+}
+
+
 
 .third{
     grid-area: third;
     /* background-color: #333; */
     display: grid;
 }
-.third div{
+.thirdBox{
     background: none;
     border: 5px solid white;
     border-radius: 7px;
@@ -362,6 +410,26 @@ body{
     width: 75%;
     justify-self: center;
     align-self: center;
+    position: relative;
+    display: grid;
+}
+.thirdBox i{
+    font-size: 9vw;
+    justify-self: center;
+    position: absolute;
+    top: 0.6em;
+}
+.thirdBox div{
+    justify-self: center;
+    align-self: center;
+    font-size: 3vw;
+    line-height: 1.3em;
+    padding: 0;
+    display: grid;
+    margin-top: 5em;
+}
+.thirdBox div span{
+    justify-self: center;
 }
 
 
