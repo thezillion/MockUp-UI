@@ -688,7 +688,7 @@ body{
 
     /* Details Div */
     .details{
-        padding: 1em 0 1em 1em;
+        padding: 1em 0 2em 1em;
     }
     .details li{
         font-size: 13px;
@@ -698,6 +698,29 @@ body{
     }
     .detailImage i{
         left: -1em;
+    }
+
+
+    /* Bottom Div */
+    .bottomDiv{
+        margin-top: 2em;
+        grid-template-rows: 0.1fr 0.8fr 2fr;
+        grid-template-columns: auto;
+        grid-template-areas: 
+            "head"
+            "image"
+            "content"
+    }
+    .bottomHead h1{
+        font-size: 10vw;
+    }
+    .bottomImage{
+        margin-top: 2em;
+        padding: 3em;
+    }
+    .bottomContent{
+        height: auto;
+        padding: 2em 2em;
     }
 
 }
