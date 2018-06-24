@@ -112,7 +112,7 @@ body{
 #ibeto{
     height: 5em;
     top: 9px;
-    left: 13.5em;
+    left: 14.5em;
 }
 #mec{
     left: 4.7em;
@@ -177,9 +177,9 @@ body{
 .midContent{
     /* background-color: tomato; */
     grid-area: box1;
-    padding: 4em 4em;
+    padding: 2em 5em;
     line-height: 2.3em;
-    font-size: 30px;
+    font-size: 35px;
     color: #1b5e20;
 }
 
@@ -284,5 +284,120 @@ body{
     padding: 3em;
     font-size: 1.6em;
     line-height: 1.6;
+}
 
+
+
+
+
+
+
+
+/* Prize Div */
+.prizeDiv{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    color: white;
+    background-color: #36ad50;
+    grid-template-rows: 1.2fr 5fr;
+    grid-template-columns: auto auto auto;
+    grid-template-areas: 
+        "prizeHead prizeHead prizeHead"
+        "second first third";
+}
+
+.prizeHead{
+    grid-area: prizeHead;
+    /* background-color: tomato; */
+    position: relative;
+}
+.prizeHead h1{
+    justify-self: flex-start;
+    position: absolute;
+    left: 1.5em;
+}
+
+.second{
+    grid-area: second;
+    /* background-color: teal; */
+    display: grid;
+}
+.second div{
+    background: none;
+    border: 5px solid white;
+    border-radius: 7px;
+    height: 65%;
+    width: 75%;
+    justify-self: center;
+    align-self: center;
+}
+
+.first{
+    grid-area: first;
+    /* background-color: yellow; */
+    display: grid;
+}
+.first div{
+    background: none;
+    border: 5px solid white;
+    border-radius: 7px;
+    height: 85%;
+    width: 85%;
+    justify-self: center;
+    align-self: center;
+}
+
+.third{
+    grid-area: third;
+    /* background-color: #333; */
+    display: grid;
+}
+.third div{
+    background: none;
+    border: 5px solid white;
+    border-radius: 7px;
+    height: 65%;
+    width: 75%;
+    justify-self: center;
+    align-self: center;
+}
+
+
+
+
+
+
+
+/* FooterDiv */
+.footerDiv{
+    width: 100%;
+    height: 50vh;
+    background-color: #333;
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    grid-template-columns: 4fr 2fr 2fr;
+    grid-template-areas: 
+        "logo ibeto excel"
+        "brand brand brand";
+}
+
+.logo{
+    grid-area: logo;
+    background-color: tomato;
+}
+
+.footerIbeto{
+    grid-area: ibeto;
+    background-color: teal;
+}
+
+.footerExcel{
+    grid-area: excel;
+    background-color: #333;
+}
+
+.Excelbrand{
+    grid-area: brand;
+    background-color: brown;
 }
