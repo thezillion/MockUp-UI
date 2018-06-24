@@ -138,7 +138,7 @@ body{
 }
 
 .content h1{
-    line-height: 5px;
+    line-height: 0.7em;
     font-size: 4vw;
     margin-top: 15px;
 }
@@ -749,15 +749,15 @@ body{
         padding: 0 4px;
     }
     .footerIbeto img{
-        height: 4em;
-        width: 4em;
+        height: 5em;
+        width: 5em;
     }
     .footerIbeto div{
         font-size: 8px;
     }
     .footerExcel img{
-        height: 2.3em;
-        width: 4em;
+        height: 3em;
+        width: 5em;
     }
     .footerExcel div{
         font-size: 8px;
