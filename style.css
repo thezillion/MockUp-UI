@@ -11,7 +11,7 @@ body{
 
 #nav ul{
     list-style-type: none;
-    margin: 0;
+    margin: 0 2em;
     padding: 0;
     overflow: hidden;
 }
@@ -21,9 +21,10 @@ body{
 }
 
 #nav li a{
+    font-size: 1.4vw;
     display: block;
     text-align: center;
-    padding: 17px 20px;
+    padding: 15px 25px;
     text-decoration: none;
     color: #333;
 }
@@ -51,6 +52,7 @@ body{
 .topContainer{
     width: 100%;
     height: 97vh;
+    position: relative;
 }
 
 .topContainer img{
@@ -80,7 +82,11 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2.5em;
+    font-size: 3em;
+    color: #333
+}
+.whiteCircle div h1{
+    font-size: 7vw;
 }
 
 .blackTag{
@@ -91,31 +97,33 @@ body{
     height: 5.7em;
     width: 43%;
     transform: skewX(-20deg);
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-areas: 
+        "mec1 ibeto2 excel3"
 }
 
 .blackTag img{
     transform: skewX(20deg);
     height: 3.5em;
     width: 9.5vw;
-    position: absolute;
-    top: 15px;
+    justify-self: center;
+    align-self: center;
 }
 #excel{
-    height: 4.2em;
-    top: 10px; 
-    right: 4.4em;
+    grid-area: excel3;
+    justify-self: start;
+    height: 5vw;
+    width: 8vw;
 }
 #ibeto{
-    height: 5em;
-    top: 9px;
-    left: 14.5em;
+   grid-area: ibeto2;
+   height: 6vw;
+   width: 7vw;
 }
 #mec{
-    left: 4.7em;
+    grid-area: mec1;
+    justify-self: end;
 }
 
 .content{
@@ -573,4 +581,79 @@ body{
     align-self: center;
     justify-self: center;
     color: white;
+}
+
+
+
+
+
+
+/* Responsive - Mobile View */
+@media(max-width: 768px){
+    
+    /* NavBar */
+    #nav ul{
+        margin: 0 1.4em;
+    }
+
+    #nav li a{
+        font-size: 10px;
+        padding: 15px 5px;
+    }
+
+
+    /* Top Container */
+    .topContainer img{
+        height: 65%;
+    }
+    
+    .whiteCircle{
+        height: 18%;
+        width: 32%;
+        top: 17%;
+        right: 7%;
+    }
+    .whiteCircle div h1{
+        font-size: 11vw;
+        padding-bottom: 9px;
+    }
+    
+    .blackTag{
+        width: 70%;
+        height: 9%;
+        top: 45%;
+    }
+    .blackTag img{
+        height: 60%;
+        width: 70%;
+    }
+    #excel{
+        height: 65%;
+        width: 80%;
+    }
+    #ibeto{
+        height: 70%;
+        width: 67%;
+    }
+
+    .content{
+        padding-top: 4em;
+        top: 1%;
+        left: 2%;
+        height: 60%;
+        width: 60%;
+    }
+    .content h1{
+        font-size: 1.7em;
+    }
+    .content p{
+        font-size: 2.5vw;
+    }
+    .content button{
+        font-size: 2.5vw;
+        height: 13%;
+        width: 60%;
+        margin-top: 1em;
+    }
+
 }
