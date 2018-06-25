@@ -59,6 +59,9 @@ body{
     width: 100%;
     height: 97vh;
     position: relative;
+    background-image: url(assets/hero-bg.JPG);
+    background-size: 100% 100%;
+    z-index: -1;
 }
 
 .topContainer img{
@@ -603,10 +606,27 @@ body{
 
 /* Responsive - Mobile View */
 @media(max-width: 768px){
+
+    .blackNav {
+        position: static;
+        left: 0;
+        top: 0;
+        width: 100%;
+        transform: none;
+        text-align: center;
+    }
+
+    .blackNav img {
+        height: 1.3em;
+        transform: none;
+        left: 0;
+        top: 30%;
+    }
     
     /* NavBar */
     #nav ul{
-        margin: 0 1.4em;
+        background-color: white;
+        margin: 0;
     }
 
     #nav li a{
@@ -617,17 +637,19 @@ body{
 
     /* Top Container */
     .topContainer{
-        height: 70vh;
+        height: auto !important;
     }
     .topContainer img{
         height: 80%;
     }
     
     .whiteCircle{
-        height: 25%;
+        /* height: 25%;
         width: 32%;
         top: 25%;
         right: 4%;
+         */
+        display: none;
     }
     .whiteCircle div h1{
         font-size: 11vw;
@@ -635,9 +657,10 @@ body{
     }
     
     .blackTag{
-        width: 57%;
+        /* width: 57%;
         height: 9%;
-        top: 60%;
+        top: 60%; */
+        display: none;
     }
     .blackTag img{
         height: 60%;
@@ -653,11 +676,8 @@ body{
     }
 
     .content{
-        padding-top: 6em;
-        top: 1%;
-        left: 2%;
-        height: 60%;
-        width: 60%;
+        width: 100%;
+        position: static;
     }
     .content h1{
         font-size: 1.7em;
@@ -678,7 +698,6 @@ body{
         margin-bottom: 1em;
     }
     .midContent{
-        margin-top: -3em;
         padding: 4px 1.5em;
         font-size: 19px;
         display: grid;
@@ -711,7 +730,8 @@ body{
         font-size: 9vw;
     }
     .detailImage i{
-        left: -1em;
+        /* left: -1em; */
+        display: none;
     }
 
 
@@ -730,7 +750,10 @@ body{
     }
     .bottomImage{
         margin-top: 2em;
-        padding: 3em;
+        padding: 0 2em;
+    }
+    .bottomImage div {
+        padding: 0;
     }
     .bottomContent{
         height: auto;
@@ -741,7 +764,6 @@ body{
 
     /* PrizeDiv */
     .prizeDiv{
-        height: 47vh;
     }
     .prizeHead{
         margin-bottom: 7em;
@@ -750,28 +772,45 @@ body{
         font-size: 9vw;
     }
 
+    .prizeDiv i {
+        display: none;
+    }
+    .prizeDiv .firstBox, .prizeDiv .secondBox, .prizeDiv .thirdBox {
+        padding: 1.3em 0;
+    }
+    .prizeDiv .firstBox div, .prizeDiv .secondBox div, .prizeDiv .thirdBox div {
+        margin: 0;
+    }
+
 
     /* Footer */
     .footerDiv{
         height: 30vh;
     }
-    .logo h3{
-        font-size: 5.5vw;
+    .logo img{
+        display: none;
+    }
+    .logo div {
+        margin-top: 1em;
+    }
+    .logo div span {
+        display: block;
     }
     .logo div a{
         font-size: 10px;
         padding: 0 4px;
     }
     .footerIbeto img{
-        height: 5em;
-        width: 5em;
+        height: 3em;
     }
     .footerIbeto div{
         font-size: 8px;
     }
+    .footerExcel {
+        margin: 0 1em;
+    }
     .footerExcel img{
         height: 3em;
-        width: 5em;
     }
     .footerExcel div{
         font-size: 8px;
