@@ -21,7 +21,7 @@ body{
 }
 
 #nav li a{
-    font-size: 1.4vw;
+    font-size: 1.1vw;
     display: block;
     text-align: center;
     padding: 15px 25px;
@@ -42,7 +42,13 @@ body{
     transform: skewX(-20deg);
 }
 
-
+.blackNav img {
+    transform: skewX(20deg);
+    position: relative;
+    left: 13%;
+    top: 24%;
+    height: 1.9em;
+}
 
 
 
@@ -73,6 +79,10 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url(assets/title-sponsor-paytm.png);
+    background-repeat: no-repeat;
+    background-size: 64%;
+    background-position: center;
 }
 
 .whiteCircle div{
@@ -113,13 +123,13 @@ body{
 #excel{
     grid-area: excel3;
     justify-self: start;
-    height: 5vw;
-    width: 8vw;
+    height: 4vw;
+    width: 8.2vw;
 }
 #ibeto{
    grid-area: ibeto2;
-   height: 6vw;
-   width: 7vw;
+   height: 5vw;
+   width: 5.5vw;
 }
 #mec{
     grid-area: mec1;
@@ -141,6 +151,7 @@ body{
     line-height: 0.7em;
     font-size: 4vw;
     margin-top: 15px;
+    font-weight: bold;
 }
 
 .content p{
@@ -163,11 +174,9 @@ body{
     cursor: pointer;
 }
 
-
-
-
-
-
+.content button[disabled] {
+    opacity: .6;
+}
 
 
 /* MID Container */
@@ -327,6 +336,8 @@ body{
 .bottomImage div{
     justify-self: center;
     line-height: 1px;
+    padding-left: 7em;
+    padding-bottom: 8em;
 }
 
 .bottomContent{
@@ -505,6 +516,10 @@ body{
         "brand brand brand";
 }
 
+.footerDiv a {
+    color: white;
+}
+
 
 .logo{
     grid-area: logo;
@@ -512,7 +527,7 @@ body{
     color: white;
     display: grid;
 }
-.logo h3{
+.logo img{
     justify-self: center;
     align-self: center;
 }
@@ -540,13 +555,12 @@ body{
 .footerIbeto img{
     justify-self: center;
     align-self: center;
-    height: 10em;
-    width: 10em;
+    height: 5em;
 }
 .footerIbeto div{
     justify-self: center;
     color: white;
-    margin: -3em;
+    margin-top: -1em;
 }
 
 
@@ -560,13 +574,12 @@ body{
 .footerExcel img{
     justify-self: center;
     align-self: center;
-    height: 7em;
-    width: 10em;
+    height: 5em;
 }
 .footerExcel div{
     justify-self: center;
     color: white;
-    margin: -1.5em;
+    margin-top: -1em;
 }
 
 
@@ -648,6 +661,7 @@ body{
     }
     .content h1{
         font-size: 1.7em;
+        
     }
     .content p{
         font-size: 2.8vw;
