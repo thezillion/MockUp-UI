@@ -403,7 +403,7 @@ body{
     position: relative;
     display: grid;
 }
-.secondBox i{
+.secondBox .trophy{
     font-size: 9vw;
     justify-self: center;
     position: absolute;
@@ -440,7 +440,7 @@ body{
     display: grid;
     position: relative;
 }
-.firstBox i{
+.firstBox .trophy{
     font-size: 13vw;
     justify-self: center;
     position: absolute;
@@ -477,7 +477,7 @@ body{
     position: relative;
     display: grid;
 }
-.thirdBox i{
+.thirdBox .trophy{
     font-size: 9vw;
     justify-self: center;
     position: absolute;
@@ -774,7 +774,7 @@ body{
         font-size: 9vw;
     }
 
-    .prizeDiv i {
+    .prizeDiv .trophy {
         /* display: none; */
         position: static;
     }
