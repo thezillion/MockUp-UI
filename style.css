@@ -5,7 +5,7 @@ body{
 }
 
 #nav{
-    height: 3.3em;
+    /* height: 3.3em; */
     width: 100%;   
 }
 
@@ -764,6 +764,8 @@ body{
 
     /* PrizeDiv */
     .prizeDiv{
+        height: auto;
+        grid-template-rows: auto auto auto;
     }
     .prizeHead{
         margin-bottom: 7em;
@@ -773,10 +775,12 @@ body{
     }
 
     .prizeDiv i {
-        display: none;
+        /* display: none; */
+        position: static;
     }
     .prizeDiv .firstBox, .prizeDiv .secondBox, .prizeDiv .thirdBox {
         padding: 1.3em 0;
+        height: auto;
     }
     .prizeDiv .firstBox div, .prizeDiv .secondBox div, .prizeDiv .thirdBox div {
         margin: 0;
