@@ -264,7 +264,7 @@ body{
     height: auto;
     display: grid;
     grid-template-columns: auto auto;
-    background-color: #36ad50;
+    background-color: #59b76e;
 }
 
 .details{
@@ -367,7 +367,7 @@ body{
     height: 110vh;
     display: grid;
     color: white;
-    background-color: #36ad50;
+    background-color: #59b76e;
     padding-bottom: 1em;
     grid-template-rows: 1.2fr 5fr;
     grid-template-columns: auto auto auto;
@@ -784,6 +784,7 @@ body{
     }
     .prizeDiv .firstBox div, .prizeDiv .secondBox div, .prizeDiv .thirdBox div {
         margin: 0;
+        margin-top: 1em;
     }
 
 
