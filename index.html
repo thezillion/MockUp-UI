@@ -32,9 +32,9 @@
             </div>
             
             <div class="blackTag">
-                <img id="mec" src="./assets/Copy of mec_logo.png">
-                <img id="ibeto" src="./assets/logo (1).png">
-                <img id="excel" src="./assets/Copy of logo3x2newest.png">
+                <img id="mec" src="./assets/Copy of mec_logo.png" onClick="goToLink('http://mec.ac.in')">
+                <img id="ibeto" src="./assets/logo (1).png" onClick="goToLink('http://ibeto.excelmec.org')">
+                <img id="excel" src="./assets/Copy of logo3x2newest.png" onClick="goToLink('http://excelmec.org')">
             </div>
             
             <div class="content">
@@ -53,10 +53,18 @@
         
         <div class="logosContainer">
             <div>
-                <img src="assets/paytmlogo.png" class="paytm" alt="">
-                <img src="assets/Copy of mec_logo.png" alt="">
-                <img src="assets/logo (1).png" alt="">
-                <img src="assets/Copy of logo3x2newest.png" alt="">
+                <a href="https://medium.com/paytm-build-for-india" target="_blank">
+                    <img src="assets/paytmlogo.png" class="paytm" alt="">
+                </a>
+                <a href="http://mec.ac.in" target="_blank">
+                    <img src="assets/Copy of mec_logo.png" alt="">
+                </a>
+                <a href="http://ibeto.excelmec.org" target="_blank">
+                    <img src="assets/logo (1).png" alt="">
+                </a>
+                <a href="http://excelmec.org" target="_blank">
+                    <img src="assets/Copy of logo3x2newest.png" alt="">
+                </a>
             </div>
 
         </div>
@@ -76,6 +84,7 @@
                 <div id="midImagecontent">
                     <div><span>August</span></div>
                     <div><h1>4-5</h1></div>
+                    <div><h6>11:30 am to 11:30 am</h6></div>
                 </div>
             </div>
 
@@ -246,21 +255,31 @@
             </div>
             
             <div class="footerIbeto">
-                <img src="./assets/logo (1).png">
+                <img src="./assets/logo (1).png" onClick="goToLink('http://ibeto.excelmec.org')">
                 <div><span><a href="http://ibeto.excelmec.org">ibeto.excelmec.org</a></span></div>
             </div>
             
             <div class="footerExcel">
-                <img src="./assets/Copy of logo3x2newest.png">
+                <img src="./assets/Copy of logo3x2newest.png" onClick="goToLink('http://excelmec.org')">
                 <div><span><a href="http://excelmec.org">excelmec.org</a></span></div>
             </div>
             
             <div class="Excelbrand">
                 <span>&copy; Excel 2018</span>
+                <span>
+                    <a href="https://www.facebook.com/excelmec" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                    &nbsp;
+                    <a href="https://www.instagram.com/excelmec" target="_blank"><i class="fab fa-instagram"></i></a>
+                </span>
             </div>
 
         </div>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+        <script>
+            function goToLink(lnk) {
+                window.open(lnk,'_blank');
+            }
+        </script>
     </body>
 </html>
