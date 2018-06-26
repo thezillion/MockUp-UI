@@ -71,12 +71,20 @@ body{
     z-index: -1;
 }
 
+.topContainer .content pre {
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;  
+}
+
 .whiteCircle{
     position: absolute;
     top: 10em;
     right: 9em;
-    height: 40%;
-    width: 20%;
+    height: 17em;
+    width: 17em;
     border-radius: 50%;
     background-color: white;
     display: flex;
@@ -86,6 +94,14 @@ body{
     background-repeat: no-repeat;
     background-size: 64%;
     background-position: center;
+}
+
+@media (max-width: 1080px) {
+    .whiteCircle {
+        width: 10em;
+        height: 10em;
+        top: 5em;
+    }
 }
 
 .whiteCircle div{
