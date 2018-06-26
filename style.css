@@ -622,6 +622,8 @@ body{
 .contactDiv .person .text {
     text-align: left;
     padding: 1em;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .contactDiv .person .text a {
     color: #3f9c3f;
