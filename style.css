@@ -896,3 +896,20 @@ body{
     }
 
 }
+
+.other-sponsors {
+    text-align: center;
+    padding-bottom: 5em;
+}
+
+.other-sponsors h5 {
+    font-weight: bold;
+}
+
+.other-sponsors img {
+    height: 140px;
+}
+/*
+.other-sponsors img.sponsor-tnie {
+    height: 130px;
+}*/
