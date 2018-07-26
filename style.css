@@ -332,7 +332,9 @@ body{
     grid-template-columns: 50% 50%;
     grid-template-areas: 
         "head head"
-        "image content";
+        "image content"
+        "logo1 logo2"
+        "logo3 logo3";
     margin-top: 3em;
 }
 
@@ -909,7 +911,13 @@ body{
 .other-sponsors img {
     height: 140px;
 }
-/*
-.other-sponsors img.sponsor-tnie {
-    height: 130px;
-}*/
+
+.other-sponsors.sponsor-ksum {
+    grid-area: logo1;
+}
+.other-sponsors.sponsor-tnie {
+    grid-area: logo2;
+}
+.other-sponsors.sponsor-ewnture {
+    grid-area: logo3;
+}
